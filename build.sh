@@ -1,4 +1,5 @@
-cd /asm
-nasm -f elf64 -o test.o test.s
-ld -s -o test test.o
+nasm -f elf64 -i test.o test.s
+ld -o test test.o
+objdump -D test
 ./test
+gdb test

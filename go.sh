@@ -1,1 +1,1 @@
-docker run  --cap-add=SYS_PTRACE --security-opt seccomp=unconfined --platform linux/amd64 -v /Users/cameron.shellum/git/asm:/asm -it asm /bin/bash
+docker run -it --cap-add=SYS_PTRACE --security-opt seccomp=unconfined  -v ./:/asm --platform linux/amd64  asm
